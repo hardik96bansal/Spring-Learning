@@ -1,15 +1,19 @@
-package com.hello.courses.topics;
+package com.hello.courses.course;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+import com.hello.courses.topics.Topic;
+
 @Entity
-public class Topic {
+public class Course {
     
     @Id
     String id;
     String name;
     String description;
+
+    Topic topic;
 
     public String getId() {
         return id;
@@ -35,13 +39,21 @@ public class Topic {
         this.description = description;
     }
 
-    public Topic(String id, String name, String description) {
+    public Course(String id, String name, String description) {
         this.id = id;
         this.name = name;
         this.description = description;
     }
 
-    public Topic(){
+    public Course(){
 
+    }
+
+    public Topic getTopic() {
+        return topic;
+    }
+
+    public void setTopic(Topic topic) {
+        this.topic = topic;
     }
 }
