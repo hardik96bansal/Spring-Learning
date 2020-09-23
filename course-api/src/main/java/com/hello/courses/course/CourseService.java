@@ -12,12 +12,11 @@ public class CourseService {
     @Autowired
     private CourseRepository courseRepository;
 
-    
-
-    public List<Course> getCourses(){
-        List<Course> topics = new ArrayList<>();
-        //topicRepository.findAll().forEach(topics::add);
-        return topics;
+    public List<Course> getCourses(String topicId){
+        List<Course> courses = new ArrayList<>();
+        courseRepository.findByTopicId(topicId)
+        .forEach(courses::add);
+        return courses;
     }
 
     public Course getCourse(String id){

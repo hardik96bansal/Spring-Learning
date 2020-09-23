@@ -1,0 +1,10 @@
+com/hello/courses/course/CourseRepository.class
+com/hello/courses/course/CourseController.class
+com/hello/courses/hi/HiController.class
+com/hello/courses/course/CourseService.class
+com/hello/courses/topics/TopicService.class
+com/hello/courses/topics/TopicController.class
+com/hello/courses/CoursesApplication.class
+com/hello/courses/course/Course.class
+com/hello/courses/topics/Topic.class
+com/hello/courses/topics/TopicRepository.class

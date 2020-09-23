@@ -2,6 +2,7 @@ package com.hello.courses.course;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 import com.hello.courses.topics.Topic;
 
@@ -13,6 +14,7 @@ public class Course {
     String name;
     String description;
 
+    @ManyToOne
     Topic topic;
 
     public String getId() {
